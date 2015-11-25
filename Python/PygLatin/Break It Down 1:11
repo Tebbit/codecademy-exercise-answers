@@ -1,0 +1,12 @@
+pyg = 'ay'
+print "Hi, welcome my Pig latin translator"
+original = raw_input("Please type in the phrase you want to translate:")
+if len(original) > 0 and original.isalpha():
+    word = original.lower()
+    firstletter = word[0]
+    outcome = word + firstletter + pyg
+    outcome = outcome[1:len(outcome)]
+    print outcome
+else:
+    print "No digits and no spaces please"
+# made by Tebbit | arienskate@gmail.com
